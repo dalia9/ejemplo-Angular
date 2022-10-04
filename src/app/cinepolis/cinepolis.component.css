@@ -1,22 +1,22 @@
 body{
-    background-color: #324397;
+    background-color: #5C92AD;
     border-radius: 30px;
     width: 100%;
-    height: 120%;
+    height: 100%;
     margin-top: 3%;
 
 }
 
 #nota{
     margin: 10px;
-    background-color: #97324F;
+    background-color: #CF8887;
     font-style: bold;
     padding: 10px;
-    text-align: left;
+    text-align: center;
     color: white;
     border-radius: 30px;
     text-align: justify;
-    width:70%;
+    width:600px;
 }
 
 .col{
@@ -37,6 +37,7 @@ body{
     color: black;
     text-align: center;
     border-radius: 30px;
+    width: 300px;
     margin: 5px;
     padding: 20px;
     text-align: left;
@@ -49,5 +50,5 @@ button{
 }
 
 img{
-    size: 50px;
+    width: 300px;
 }

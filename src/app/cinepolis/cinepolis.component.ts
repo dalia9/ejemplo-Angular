@@ -15,15 +15,15 @@ export class CinepolisComponent implements OnInit {
   boletoLimite:number=7;
   tarjeta:string='';
   mensaje:string='';
-  imagenUrl:string='';
 
- 
+  imagenUrl:string="https://www.fayerwayer.com/resizer/Ww8bCmm7zqlSh7Gjw4CEG9ndF5Q=/arc-photo-metroworldnews/arc2-prod/public/JAYHKTJ7FFHW3BNWW7LSY5ZQAM.jpg"
 
   constructor() { }
 
   cinepolis(){
+    
     if(this.numeroBoletos  <= this.boletoLimite){
-      this.imagenUrl="https://www.fayerwayer.com/resizer/Ww8bCmm7zqlSh7Gjw4CEG9ndF5Q=/arc-photo-metroworldnews/arc2-prod/public/JAYHKTJ7FFHW3BNWW7LSY5ZQAM.jpg"
+      
 
       if(this.numeroBoletos>5){
         this.total=(this.boleto*this.numeroBoletos*.85);
