@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {IProducto} from '../producto';
 
 @Component({
   selector: 'app-product-list',
@@ -7,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductListComponent implements OnInit { //Implement es porque es la implementacion de la interface
 
+  imageWidth:number=50;
+  imageMargin:number=10;
+  muestraImg:boolean=true;
+  listFilter:string='';  
 
-  productos:any[]=[
+  productos:IProducto[]=[
     {
       "productoId":1,
       "Modelo":'Sentra',
@@ -42,10 +47,14 @@ export class ProductListComponent implements OnInit { //Implement es porque es l
       "ImagenUrl":"https://noticias.coches.com/wp-content/uploads/2014/07/nissan_march-china-k13-2010_r3.jpg"
     },
 
-
   ]
 
   constructor() { }
+
+  ShowImagen():void{
+    this.muestraImg= !this.muestraImg; //El signo sirve para que te muestre si es falso lo cambie
+
+  }
 
   ngOnInit(): void {
   }

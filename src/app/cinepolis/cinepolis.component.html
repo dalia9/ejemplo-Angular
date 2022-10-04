@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header>
+</header>
+<body>
+    <div><img [src]="imagenUrl"></div>
+    <div class="container text-left">
+        <div class="row">
+            <div class="col"><br>
+                Nombre: <input type="text" [(ngModel)]="nombre" name="nombre"><br><br>
+                Cantidad compradores: <input type="text" [(ngModel)]="comprador" name="comprador"><br>
+                Tarjeta Cineco:<br>
+                <input type="radio" value="si" [(ngModel)]="tarjeta" name="tarjeta">Si<br>
+                <input type="radio" value="no" [(ngModel)]="tarjeta" name="tarjeta">No<br> 
+
+                Cantidad Boletos: <input type="text"[(ngModel)]="numeroBoletos" name="boletos"><br><br>
+
+                <button type="button" (click)="cinepolis()">Procesar</button>
+
+            </div>
+            <div id="res" class="col">
+                <br><h1 id="contenido">Boletos comprados: {{numeroBoletos}}</h1>
+                <br><h1>{{mensaje}}</h1>
+            </div>
+            <section id="nota">
+                NOTA: Solo pueden hacerse la compra de 7 boletos por persona
+            </section>
+            <section>
+                <h1 id="total" >Total a pagar:</h1><input type="string" [(ngModel)]="total">
+            </section>
+        </div>
+    </div>
+</body>
+</html>
