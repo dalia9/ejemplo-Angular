@@ -30,17 +30,18 @@ body{
 
 #total{
     color: white;
+    text-align: center;
 }
 
 #contenido{
     background-color: #E2D67F;
-    color: black;
-    text-align: center;
+    color: rgb(54, 93, 107);
     border-radius: 30px;
     width: 300px;
     margin: 5px;
     padding: 20px;
-    text-align: left;
+    margin-left: 22%;
+    text-align: center;
 }
 
 button{
@@ -51,4 +52,13 @@ button{
 
 img{
     width: 300px;
+}
+
+h1{
+    text-align: center;
+}
+
+#input{
+    margin-left: 42%;
+    text-align: center;
 }

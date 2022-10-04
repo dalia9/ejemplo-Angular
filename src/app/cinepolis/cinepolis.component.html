@@ -25,14 +25,16 @@
 
             </div>
             <div id="res" class="col">
-                <br><h1 id="contenido">Boletos comprados: {{numeroBoletos}}</h1>
-                <br><h1>{{mensaje}}</h1>
+                <h1>Boletos comprados:</h1>
+                <h2 id="contenido">{{numeroBoletos}}</h2><br><br>
+                <h1>Nombre de quien lo compra:</h1>
+                <h2 id="contenido">{{nombre}}</h2>
             </div>
             <section id="nota">
                 NOTA: Solo pueden hacerse la compra de 7 boletos por persona
             </section>
             <section>
-                <h1 id="total" >Total a pagar:</h1><input type="string" [(ngModel)]="total">
+                <h1 id="total" >Total a pagar:</h1><input id="input" type="string" [(ngModel)]="total">
             </section>
         </div>
     </div>
